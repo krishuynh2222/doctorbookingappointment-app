@@ -1,0 +1,125 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    padding: 0 60px;
+    padding-top: 100px;
+}
+.header-leftside {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px;
+    margin: auto;
+    padding: 60px 0;
+}
+.header-desc {
+    font-size:  40px;
+    color: white;
+    font-weight: 600;
+    line-height: 1.25;
+}
+.header-rightside {
+    width: 50%;
+    position: relative;
+}
+.header-rightside img {
+    width: 100%;
+    bottom: 0px;
+    height: auto;
+    border-radius: 8px;
+    position: relative;
+}
+.header-group_profiles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+}
+.header-group_profiles_img {
+    width: 100px;
+}
+.header-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 20px;
+    color: rgb(75 85 99);
+    background-color: white;
+    margin: 0;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.header-btn:hover {
+    transform: scale(1.05);
+    color: black;
+}
+.header-arrow_icon {
+    width:  12px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 0 20px;
+        padding-top: 50px;
+        align-items: center;
+    }
+
+    .header-leftside,
+    .header-rightside {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    .header-leftside {
+        padding: 30px 0;
+        align-items: center; 
+    }
+
+    .header-desc {
+        font-size: 28px;
+        text-align: center; 
+    }
+
+    .header-group_profiles {
+        justify-content: center; 
+    }
+
+    .header-rightside img {
+        width: 80%; 
+        max-width: 300px; 
+    }
+
+    .header-btn {
+        padding: 10px 20px; 
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 0 10px;
+        padding-top: 30px;
+    }
+
+    .header-desc {
+        font-size: 24px;
+    }
+
+    .header-rightside img {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .header-btn {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}

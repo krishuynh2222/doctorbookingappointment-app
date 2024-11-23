@@ -1,0 +1,39 @@
+.speciality {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 60px 0;
+    color: black;
+}
+.speciality h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+.speciality-desc {
+    text-align: center;
+    line-height: 1.25rem;
+    font-size:  16px;
+}
+.speciality-menu {
+    display: flex;
+    gap: 12px;
+    padding-top: 10px;
+    overflow: scroll;
+}
+.speciality-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.speciality-item:hover {
+    transform: translateY(-10px); 
+}
+.speciality-item img {
+    width: 100px;
+    margin-bottom: 10px;
+}

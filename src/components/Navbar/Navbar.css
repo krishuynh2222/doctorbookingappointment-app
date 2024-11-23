@@ -1,0 +1,78 @@
+.navbar {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 160px;
+    cursor: pointer;
+}
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+}
+.navbar button {
+    background-color: transparent;
+    font-size: 16px;
+    color: white;
+    background-color: #5f6FFF;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 1px solid #5f6FFF;
+    cursor: pointer;
+}
+.navbar button:hover {
+    background-color: #374af2;
+}
+.navbar .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #5f6FFF;
+}
+.navbar li {
+    cursor: pointer;
+}
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+}
+.navbar-profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: gray;
+    font-weight: 500;
+    position: relative;
+}
+.navbar-profile-pic {
+    width: 50px;
+    border-radius: 10px;
+}
+.nav-profile-dropdown {
+    position: absolute;
+    display: none;
+    right: 0;
+    top: 60px; /* Increased space to ensure it doesn't overlap the profile pic */
+    z-index: 1;
+}
+.navbar-profile:hover .nav-profile-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    background-color: rgb(226, 226, 226);
+    padding: 12px 40px;
+    outline: 4px solid white;
+    cursor: pointer;
+}
+.nav-profile-dropdown li:hover {
+    color: black;
+}
