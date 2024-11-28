@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-      <img src={assets.logo} alt="" className='logo' />
+      <img onClick={() => navigate('/')} src={assets.logo} alt="" className='logo' />
       <ul className='navbar-menu'>
         <NavLink to="/">
           <li className={menu === "home" ? "active" : ""}>Home</li>

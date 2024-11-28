@@ -61,17 +61,16 @@
   
   .footer-copyright {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   
   .footer-divider {
-    margin: 20px 0;
+    margin: 10px 0;
     border: 0.5px solid #dee2e6;
   }
   
   .footer-copyright p {
     font-size: 14px;
-
   }
 
 /* Responsive Design */

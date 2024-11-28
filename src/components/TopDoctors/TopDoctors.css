@@ -38,7 +38,7 @@
     transform: translateY(-10px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
-.topDocto-img {
+.topDoctor-img {
     object-fit: cover;
     display: block;
 }

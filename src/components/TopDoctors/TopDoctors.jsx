@@ -15,11 +15,11 @@ const TopDoctors = () => {
         <p className='topDoctors-desc'>Simply browse through our extensive list of trusted doctors.</p>
         <div className='topDoctor-lists'>
             {doctors.slice(0,10).map((item, idx)=>(
-                <div onClick={() => navigate(`/appointment/${item._id}`)}className='topDoctor-item' key={idx}> 
-                    <img className="topDocto-img bg-color-img" src={item.image} alt="" />
+                <div onClick={() => {navigate(`/appointment/${item._id}`); scrollTo(0,0)}} className='topDoctor-item' key={idx}> 
+                    <img className="topDoctor-img bg-color-img" src={item.image} alt="" />
                     <div className='topDoctor-info'>
                         <div className='topDoctor-status'>
-                            <p className='status'></p><p>Avaiable</p>
+                            <p className='status'></p><p>Available</p>
                         </div>
                         <p className="topDoctor-name">{item.name}</p>
                         <p className="topDoctor-speciality">{item.speciality}</p>

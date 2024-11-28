@@ -1,0 +1,111 @@
+.doctorInfo {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.doctorImg {
+  width: 18em;  
+  border-radius: 16px;
+}
+.doctorDetails {
+    flex: 1;
+    border: 1px solid gray;
+    border-radius: 16px;
+    background-color: white;
+    padding: 26px 30px;
+}
+.doctorName {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+.verifiedIcon {
+    width: 0.8em;
+}
+.doctorMeta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 0.6em;
+    color: rgb(87, 87, 87);
+}
+.doctorExperience {
+    padding: 0.5em 1em; 
+    background-color: lightgray;
+    border: none;
+    border-radius: 6px;
+}
+.doctorTitle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 1em;
+}
+.aboutDesc {
+    font-size: 16px;
+    margin-top: 0.2em;
+    color: rgb(107, 106, 106);
+}
+.doctorFee {
+    margin-top: 0.3em;
+    font-size: 16px;
+}
+.doctorFee span {
+    font-weight: bold;
+}
+.bookingSlots {
+    font-size: 16px;
+    color: gray;
+    margin-left: 19rem;
+    margin-top: 2rem;
+    font-weight: 600;
+    padding-left: 12px;
+}
+.bookingSlots__days {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+    overflow-x: scroll;
+    margin-top: 20px;
+}
+.bookingSlots__day {
+    cursor: pointer;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 40px;
+    border: 1px solid gray;
+}
+.bookingSlots__day--active, .bookingSlots__time--active{
+    color: white;
+    border: none;
+}
+.bookingSlots__times {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    overflow-x: scroll;
+    margin-top: 12px;
+}
+.bookingSlots__time {
+    font-weight: lighter;
+    flex-shrink: 0;
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-radius: 10em;
+    cursor: pointer;
+}
+.bookingBtn {
+    color: white;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 18px 60px;
+    border: none;
+    border-radius: 30px;
+    margin: 20px 0;
+}
