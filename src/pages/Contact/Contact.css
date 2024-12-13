@@ -1,0 +1,45 @@
+.contact-title {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 3rem; 
+    color: gray;
+    text-transform: uppercase;
+}
+.contact-title span {
+    color: black;
+    font-weight: 500;
+}
+.contact-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3rem;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+.contact-img {
+    max-width: 30%;
+}
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    color: gray;
+    max-width: 40%;
+}
+.contact-info {
+    color: black;
+    font-weight: 500;
+}
+.contact-btn {
+    background-color: white;
+    border: 1px solid black;
+    padding: 1rem 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.contact-btn:hover {
+    background-color: black;
+    color: white;
+}

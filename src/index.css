@@ -21,6 +21,11 @@ a {
 .bg-color-primary {
     background-color: #5f6FFF;
 }
+.text-color-primary {
+    color:  #5f6FFF;
+    cursor: pointer;
+    text-decoration: underline;
+}
 
 .bg-color-img {
     background-color: #dfe1f6;

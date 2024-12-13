@@ -1,0 +1,64 @@
+.profile-container {
+    margin-top: 1rem;
+    max-width: 32rem;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 1rem;
+}
+.profile-img {
+    width: 9rem;
+    border-radius: 0.25rem;
+}
+.profile-name-input {
+    background-color: rgb(237, 237, 238);
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    max-width: 15rem;
+    margin-top: 1rem;
+}
+.profile-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    margin-top: 1rem;
+}
+.profile-divider {
+    background-color: rgb(161 161 170);
+}
+.profile-contact-title, .profile-information-title {
+    color: rgb(115 115 115);
+    text-decoration: underline;
+    margin-top: 0.75rem;
+    font-weight: 600;
+}
+.profile-contact, .profile-information {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    row-gap: 0.6rem;
+    margin-top: 0.75rem;
+}
+.profile-phone-input, .profile-address-input, 
+.profile-select, .profile-date-input {
+    background-color: rgb(237, 237, 238);
+    border: none;
+    width: 50%;
+}
+.profile-buttons {
+    margin-top: 1rem;
+    padding: 12px 30px;
+    color: black;
+    border-radius: 1.2rem;
+    border: 1px solid #5f6FFF;
+    background-color: white;
+    font-size: 1rem;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    cursor: pointer;
+}
+.profile-buttons:hover {
+    color: white;
+    background-color: #5f6FFF;
+}

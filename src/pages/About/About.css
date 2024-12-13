@@ -1,0 +1,59 @@
+.about-title {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 3rem; 
+    color: gray;
+    text-transform: uppercase;
+}
+.about-title span {
+    color: black;
+    font-weight: 500;
+}
+.about-content {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin: 30px 0;
+}
+.about-img {
+    max-width: 30%;
+}
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    color: gray;
+}
+.about-text b {
+    color: black;
+}
+/* Why choose us? */
+.about-us {
+    font-size: 1.5rem;
+    margin: 3rem 0;
+    text-transform: uppercase;
+}
+.about-us span {
+    color: gray;
+    font-weight: 500;
+}
+.about-benefits {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5rem;
+}
+.benefit-item {
+    border: 1px solid lightgray;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: gray;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.benefit-item:hover {
+    background-color: #5f6FFF;
+    color: white;
+}

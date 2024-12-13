@@ -34,9 +34,7 @@
     padding-bottom: 2px;
     border-bottom: 2px solid #5f6FFF;
 }
-.navbar li {
-    cursor: pointer;
-}
+
 .navbar-right {
     display: flex;
     align-items: center;
@@ -45,7 +43,6 @@
 }
 .navbar-profile {
     display: flex;
-    align-items: center;
     gap: 8px;
     cursor: pointer;
     color: gray;
@@ -54,24 +51,36 @@
 }
 .navbar-profile-pic {
     width: 50px;
-    border-radius: 10px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 .nav-profile-dropdown {
     position: absolute;
     display: none;
     right: 0;
-    top: 60px; /* Increased space to ensure it doesn't overlap the profile pic */
+    top: 100%;
+    transform: translateY(10px); 
+    flex-direction: column;
+    padding: 12px 16px;
+    border-radius: 8px;
     z-index: 1;
+}
+.buffer-area {
+    position: absolute;
+    height: 10px; /* Height of the gap */
+    width: 100%; 
+    top: 100%; 
 }
 .navbar-profile:hover .nav-profile-dropdown {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    list-style: none;
     background-color: rgb(226, 226, 226);
-    padding: 12px 40px;
-    outline: 4px solid white;
+    color: gray;
+}
+.nav-profile-dropdown li {
+    padding: 8px 16px;
     cursor: pointer;
+    white-space: nowrap;
+    list-style: none;
 }
 .nav-profile-dropdown li:hover {
     color: black;

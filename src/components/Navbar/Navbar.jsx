@@ -39,6 +39,7 @@ const Navbar = () => {
             ? <div className="navbar-profile">
                 <img className = "navbar-profile-pic" src={assets.profile_pic} alt="" />
 
+                <div className="buffer-area"></div>
                 <img src={assets.dropdown_icon} alt="" />
                 <div className="nav-profile-dropdown">
                   <li onClick={() => navigate("my-profile")}>My Profile</li>
@@ -52,6 +53,7 @@ const Navbar = () => {
         }
       </div>
     </div>
+
   )
 }
 
