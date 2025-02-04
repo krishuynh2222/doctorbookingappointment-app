@@ -19,8 +19,11 @@
     display: flex;
     gap: 12px;
     padding-top: 10px;
-    overflow: scroll;
 }
+.speciality-menu::-webkit-scrollbar {
+    display: none;
+}
+
 .speciality-item {
     display: flex;
     flex-direction: column;
@@ -36,4 +39,26 @@
 .speciality-item img {
     width: 100px;
     margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+    .speciality h1 {
+        font-size: 24px;
+    }
+    .speciality-desc {
+        font-size: 14px;
+        width: 100%;
+    }
+    .speciality-menu {
+        width: 100%;
+        gap: 10px;
+        padding-top: 2rem;
+        overflow: scroll;
+        justify-content: center;
+    }
+    .speciality-item {
+        font-size: 14px;
+    }
+    .speciality-item img {
+        width: 80px;
+    }
 }

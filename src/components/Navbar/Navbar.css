@@ -1,13 +1,19 @@
+/* Navbar Container */
 .navbar {
-    padding: 20px 0px;
+    padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
 }
+
+/* Logo Styling */
 .logo {
     width: 160px;
     cursor: pointer;
 }
+
+/* Navbar Menu */
 .navbar-menu {
     display: flex;
     list-style: none;
@@ -16,72 +22,178 @@
     font-weight: 500;
     color: black;
     text-transform: uppercase;
+    margin: 0;
+    padding: 0;
 }
-.navbar button {
-    background-color: transparent;
-    font-size: 16px;
-    color: white;
-    background-color: #5f6FFF;
-    padding: 10px 30px;
-    border-radius: 50px;
-    border: 1px solid #5f6FFF;
-    cursor: pointer;
-}
-.navbar button:hover {
-    background-color: #374af2;
-}
-.navbar .active {
+
+.navbar-menu .active {
     padding-bottom: 2px;
     border-bottom: 2px solid #5f6FFF;
 }
 
+/* Button Styling */
+.navbar button {
+    background-color: #5f6FFF;
+    color: white;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 1px solid #5f6FFF;
+    cursor: pointer;
+    transition: background-color 200ms ease;
+}
+
+.navbar button:hover {
+    background-color: #374af2;
+}
+
+/* Right Section */
 .navbar-right {
     display: flex;
     align-items: center;
     gap: 4px;
     position: relative;
 }
+
+/* Profile Section */
 .navbar-profile {
     display: flex;
+    align-items: center;
     gap: 8px;
     cursor: pointer;
     color: gray;
     font-weight: 500;
     position: relative;
 }
+
 .navbar-profile-pic {
     width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
 }
+
+/* Dropdown Styling */
 .nav-profile-dropdown {
     position: absolute;
-    display: none;
-    right: 0;
     top: 100%;
-    transform: translateY(10px); 
+    right: 0;
+    margin-top: 10px;
+    display: none;
     flex-direction: column;
+    background-color: rgb(226, 226, 226);
     padding: 12px 16px;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1;
 }
+
 .buffer-area {
     position: absolute;
     height: 10px; /* Height of the gap */
     width: 100%; 
     top: 100%; 
 }
+
+/* Show Dropdown on Hover */
 .navbar-profile:hover .nav-profile-dropdown {
     display: flex;
-    background-color: rgb(226, 226, 226);
-    color: gray;
 }
+
 .nav-profile-dropdown li {
     padding: 8px 16px;
     cursor: pointer;
     white-space: nowrap;
     list-style: none;
+    font-size: 16px;
+    color: gray;
+    transition: color 200ms ease;
 }
+
 .nav-profile-dropdown li:hover {
     color: black;
 }
+
+/* Menu Icon for Responsive Design */
+.menuIcon {
+    width: 1.5rem;
+    display: none;
+    cursor: pointer;
+}
+
+/* Mobile-menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    color: black;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.mobile-menu-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.mobile-menu-header img {
+    margin: 20px;
+    cursor: pointer;
+}
+.mobile-logo {
+    width: 10rem;
+}
+.close-icon {
+    width: 2rem;
+}
+.mobile-menu-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 1.3rem;
+    padding: 0 1.3rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: black;
+}
+.mobile-menu-list {
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    display: inline-block;
+    cursor: pointer;
+}
+.mobile-menu-list:hover {
+    color: white;
+    background-color: #5f6FFF;
+    padding: 10px 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+    }
+
+    .menuIcon {
+        display: block;
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+    .navbar-profile {
+        right: 10px;
+    }
+    .navbar-profile-pic {
+        width: 40px;
+        height: 40px;
+    }
+}
+

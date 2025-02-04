@@ -109,3 +109,79 @@
     border-radius: 30px;
     margin: 20px 0;
 }
+
+@media (max-width: 768px) {
+    .doctorInfo {
+        flex-direction: column; 
+        align-items: center;
+        gap: 20px;
+    }
+
+    .doctorImg {
+        width: 100%; 
+        max-width: 500px; 
+        height: auto; 
+    }
+
+    .doctorDetails {
+        margin-top: -100px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 20px; 
+    }
+
+    .doctorName {
+        font-size: 1.5em; 
+    }
+
+    .doctorMeta {
+        font-size: 14px; 
+    }
+
+    .doctorExperience {
+        font-size: 14px;
+        padding: 0.3em 0.8em; 
+    }
+
+    .doctorTitle {
+        font-size: 14px; 
+    }
+
+    .aboutDesc {
+        font-size: 14px; 
+    }
+
+    .doctorFee {
+        font-size: 14px; 
+    }
+
+    .bookingSlots {
+        width: 100%;
+        margin-left: 0; 
+        margin-top: 1rem; 
+    }
+
+    .bookingSlots__days {
+        flex-wrap: wrap; 
+        gap: 8px;
+    }
+
+    .bookingSlots__day {
+        padding: 20px 15px; 
+        font-size: 14px; 
+    }
+
+    .bookingSlots__times {
+        flex-wrap: wrap;
+    }
+
+    .bookingSlots__time {
+        padding: 8px 15px; 
+        font-size: 14px; 
+    }
+
+    .bookingBtn {
+        width: 100%;
+        font-size: 14px;
+    }
+}

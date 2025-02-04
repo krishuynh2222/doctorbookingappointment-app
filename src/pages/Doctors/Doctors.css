@@ -20,9 +20,9 @@
 .speciality-name {
     border: 1px solid gray;
     border-radius: 6px;
-    padding: 6px 20px; /* Internal padding for content inside */
+    padding: 6px 20px;
     cursor: pointer;
-    margin: 3px 0; /* Adjusted margin for spacing without affecting other components */
+    margin: 3px 0;
     text-align: center;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -38,13 +38,13 @@
 }
 
 .doctors-list {
-    flex: 1; /* Fills remaining space */
+    flex: 1; 
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Fixed size for grid items */
     gap: 10px;
     padding: 10px;
-    justify-content: center; /* Centers smaller grids */
-    align-items: stretch; /* Ensures all items have the same height */
+    justify-content: center; 
+    align-items: stretch; 
 }
 .doctor-item {
     display: flex;
@@ -96,3 +96,102 @@
     padding: 12px 48px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.filter_btn {
+    display: none;
+    padding: 10px 15px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.filter_btn:hover {
+    color: white;
+    background-color: #6c7af8;
+    border: none;
+}
+/* For smaller screens like tablets and below */
+@media (max-width: 1024px) {
+    .doctor {
+        flex-direction: column; 
+    }
+    .doctor-speciality {
+        display: none;
+    }
+    .doctor-speciality.show {
+        width: 100%;
+        display: flex;
+    }
+    .doctor-item {
+        max-width: 100%;
+    }
+
+    .doctors-list {
+        grid-template-columns: repeat(3, minmax(200px, 1fr)); /* Smaller grid items */
+    }
+
+    .speciality-name {
+        font-size: 14px;
+        padding: 4px 16px;
+    }
+
+    .doctor-name {
+        font-size: 16px;
+    }
+
+    .doctor-speciality {
+        font-size: 14px;
+    }
+
+    .doctor-more {
+        padding: 10px 40px; 
+    }
+    .filter_btn {
+        display: block;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 740px) {
+   
+    .navbar-menu {
+        display: none; 
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+    .doctor-name {
+        font-size: 14px;
+    }
+    .doctors-list {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Smaller grid items */
+    }
+
+    .doctor-speciality {
+        display: none;
+    }
+    .doctor-speciality.show {
+        width: 100%;
+        display: flex;
+    }
+
+    .doctor-item {
+        max-width: 100%;
+        min-height: auto; 
+    }
+
+    .doctor-more {
+        padding: 8px 32px; 
+    }
+
+    .speciality-name {
+        font-size: 12px;
+        padding: 4px 12px;
+    }
+
+    .doctor-info {
+        padding: 12px; 
+    }
+}
+
+

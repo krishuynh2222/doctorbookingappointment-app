@@ -32,3 +32,10 @@
     object-fit: cover;
 }
 
+@media (max-width: 768px) {
+    .relDoc-lists {
+        flex-direction: column;
+        grid-template-columns: auto;
+        gap: 1rem;
+    }
+}

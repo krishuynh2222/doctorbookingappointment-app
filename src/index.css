@@ -15,7 +15,7 @@ a {
     color: inherit;
 }
 .app {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 .bg-color-primary {
@@ -35,3 +35,9 @@ a {
     height: 8px;
 }
   
+@media (max-width: 740px) {
+    .active p {
+        color: white;
+        background-color: #5f6FFF;
+    }
+}

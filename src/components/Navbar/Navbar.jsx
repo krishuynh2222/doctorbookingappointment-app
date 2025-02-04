@@ -51,6 +51,27 @@ const Navbar = () => {
             </div>
             : <button onClick={() => navigate("/login")}>Create account</button>
         }
+        <img onClick={() => setShowMenu(true)} className="menuIcon" src={assets.menu_icon} alt="" />
+      
+      {/* ------------Mobile menu------------- */}
+        {/* Mobile Menu */}
+      {showMenu && (
+        <div className='mobile-menu'>
+          <div className="mobile-menu-header">
+            <img className="mobile-logo" src={assets.logo} alt="Logo" />
+            <img onClick={() => setShowMenu(false)} 
+            className="close-icon" 
+            src={assets.cross_icon} 
+            alt="Close" />
+          </div>
+          <ul className="mobile-menu-items">
+            <NavLink  to="/" onClick={() => setShowMenu(false)}><p className="mobile-menu-list">Home</p></NavLink>
+            <NavLink  to="/doctors" onClick={() => setShowMenu(false)}><p className="mobile-menu-list">All Doctors</p></NavLink>
+            <NavLink  to="/about" onClick={() => setShowMenu(false)}><p className="mobile-menu-list">About</p></NavLink>
+            <NavLink  to="/contact" onClick={() => setShowMenu(false)}><p className="mobile-menu-list">Contact</p></NavLink>
+          </ul>
+        </div>
+      )}
       </div>
     </div>
 

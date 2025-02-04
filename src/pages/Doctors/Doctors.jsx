@@ -6,6 +6,7 @@ import { AppContext } from '../../context/AppContext/AppContext';
 const Doctors = () => {
   const { speciality } = useParams();
   const [filterDoc, setFilterDoc] = useState([]);
+  const [showFilter, setShowFilter] = useState(false);
   const [activeSpeciality, setActiveSpeciality] = useState(speciality || ''); // Track active specialty
   const navigate = useNavigate();
   const { doctors } = useContext(AppContext);
@@ -31,7 +32,9 @@ const Doctors = () => {
     <div>
       <p className="doctor-desc">Browse through the doctors specialist.</p>
       <div className="doctor">
-        <div className="doctor-speciality">
+        <button className="filter_btn"
+         onClick={() => setShowFilter(prev => !prev)}>Filters</button>
+        <div className={`doctor-speciality ${showFilter ? 'show' : ""}`}>
           {[
             'General physician',
             'Gynecologist',

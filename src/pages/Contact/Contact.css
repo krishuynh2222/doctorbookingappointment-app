@@ -43,3 +43,33 @@
     background-color: black;
     color: white;
 }
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 1.2rem; 
+        padding-top: 2rem;
+    }
+
+    .contact-content {
+        flex-direction: column; 
+        gap: 2rem; 
+    }
+
+    .contact-img {
+        max-width: 100%; 
+        height: auto; 
+    }
+
+    .contact-text {
+        max-width: 100%; 
+        text-align: center; 
+    }
+
+    .contact-info {
+        font-size: 1rem; 
+    }
+
+    .contact-btn {
+        width: 100%; 
+        padding: 1rem; 
+    }
+}

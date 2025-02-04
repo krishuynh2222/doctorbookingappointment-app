@@ -1,0 +1,80 @@
+.appointments-title {
+    padding-bottom: 0.75rem;
+    margin-top: 1rem; 
+    font-size: 1rem;
+    color: rgb(115 115 115);
+    font-weight: bold;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+}
+.appointment-card {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem .5rem;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+}
+.appointment-image {
+    width: 8rem;
+    background-color: #dfe1f6;
+}
+.appointment-details {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+.appointment-address-title {
+    margin-top: .5rem;
+    color: rgb(63, 63, 63);
+    font-weight: 500;
+}
+.appointment-address-line {
+    font-size: .9rem;
+}
+.appointment-datetime {
+    font-size: .9rem;
+    margin-top: .5rem;
+}
+.datetime {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(63, 63, 63);
+}
+.appointment-actions {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: end;
+}
+.appointment-pay-button, .appointment--cancel-button {
+    font-size: 1rem;
+    color: gray;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: .5rem;
+    text-align: center;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.appointment-pay-button:hover {
+    color: white;
+    background-color: #5f6FFF;
+    border: none;
+}
+.appointment--cancel-button:hover {
+    color: white;
+    background-color: red;
+    border: none;
+}
+
+
+/* Media Query for Smaller Screens (iPhone, etc.) */
+@media (max-width: 480px) {
+    .appointment-card {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 1rem;
+    }
+}
+
